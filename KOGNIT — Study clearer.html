@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0137)file:///C:/Users/ARNAV%20SRIVASTAVA/Documents/Codex/2026-08-12/referenced-chatgpt-conversation-this-is-an/outputs/kognit-study/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6d4aff">
+    <meta name="description" content="KOGNIT is a focused, private study companion.">
+    <link rel="manifest" href="file:///C:/Users/ARNAV%20SRIVASTAVA/Documents/Codex/2026-08-12/referenced-chatgpt-conversation-this-is-an/outputs/kognit-study/manifest.webmanifest">
+    <link rel="icon" href="file:///C:/Users/ARNAV%20SRIVASTAVA/Documents/Codex/2026-08-12/referenced-chatgpt-conversation-this-is-an/outputs/kognit-study/icon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./KOGNIT — Study clearer_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./KOGNIT — Study clearer_files/styles.css">
+    <title>KOGNIT — Study clearer</title>
+  </head>
+  <body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="KOGNIT navigation">
+        <a class="brand" href="file:///C:/Users/ARNAV%20SRIVASTAVA/Documents/Codex/2026-08-12/referenced-chatgpt-conversation-this-is-an/outputs/kognit-study/index.html#study" aria-label="KOGNIT home">
+          <span class="brand-mark">K</span>
+          <span>KOGNIT<span class="brand-dot">.</span></span>
+        </a>
+
+        <button class="new-chat" id="new-chat" type="button">
+          <span aria-hidden="true">＋</span> New study chat
+        </button>
+
+        <nav class="nav-list" aria-label="Main navigation">
+          <button class="nav-item active" data-view="study" type="button"><span>✦</span> Study space</button>
+          <button class="nav-item" data-view="notes" type="button"><span>▤</span> Saved notes <small id="note-count">0</small></button>
+          <button class="nav-item" data-view="about" type="button"><span>◎</span> About KOGNIT</button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <button class="settings-link" id="open-settings" type="button"><span>⚙</span> AI &amp; privacy settings</button>
+          <p>Made for curious minds.<br>Your notes stay on this device.</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow" id="view-eyebrow">YOUR LEARNING SPACE</p>
+            <h1 id="view-title">Let’s make it click.</h1>
+          </div>
+          <div class="top-actions">
+            <button class="icon-button" id="install-button" type="button" title="Install KOGNIT" aria-label="Install KOGNIT">⇩</button>
+            <button class="profile" type="button" title="Your profile" aria-label="Your profile">A</button>
+          </div>
+        </header>
+
+        <section class="view view-study active" id="study-view" aria-label="Study space">
+          <section class="welcome-card">
+            <div class="welcome-copy">
+              <p class="mini-label">YOUR PERSONAL STUDY COMPANION</p>
+              <h2>Learn it. <em>Own it.</em></h2>
+              <p>Ask a question, turn a topic into a quiz, or make short revision notes. Start wherever you are.</p>
+            </div>
+            <div class="orbit-art" aria-hidden="true">
+              <span class="orbit orbit-a"></span><span class="orbit orbit-b"></span><span class="planet">✦</span>
+            </div>
+          </section>
+
+          <section class="prompt-area" aria-label="Suggested ways to study">
+            <p class="section-label">TRY A STUDY MOVE</p>
+            <div class="prompt-chips">
+              <button class="prompt-chip" data-prompt="Explain photosynthesis in simple words">🌿 Explain a topic</button>
+              <button class="prompt-chip" data-prompt="Make me a 5 question quiz about the solar system" data-mode="quiz">⚡ Make a quiz</button>
+              <button class="prompt-chip" data-prompt="Help me create a 20 minute study plan for mathematics">◴ Create a study plan</button>
+              <button class="prompt-chip" data-prompt="Give me a simple way to remember the planets in order">⌁ Remember better</button>
+            </div>
+          </section>
+
+          <section class="chat-card" aria-live="polite">
+            <div class="chat-header">
+              <div class="assistant-status"><span class="status-dot"></span><span>Kognit Tutor</span><small id="connection-label">Guided study mode</small></div>
+              <button class="text-button" id="clear-chat" type="button">Clear chat</button>
+            </div>
+            <div class="messages" id="messages"><article class="message tutor-message"><div class="avatar tutor-avatar">K</div><div class="message-bubble"><p>Hi, I’m Kognit. Tell me what you’re learning today, and I’ll help you break it down without making it feel overwhelming.</p><div class="message-actions"><button class="save-reply" type="button">Save as a note</button></div></div></article></div>
+            <form class="composer" id="chat-form">
+              <label class="sr-only" for="prompt-input">Ask Kognit</label>
+              <textarea id="prompt-input" rows="1" maxlength="4000" placeholder="Ask anything you want to learn…"></textarea>
+              <div class="composer-footer">
+                <div class="mode-picker" role="group" aria-label="Response style">
+                  <button class="mode-button selected" data-mode="explain" type="button">Explain</button>
+                  <button class="mode-button" data-mode="quiz" type="button">Quiz</button>
+                  <button class="mode-button" data-mode="plan" type="button">Plan</button>
+                </div>
+                <button class="send-button" type="submit" aria-label="Send question">↑</button>
+              </div>
+            </form>
+            <p class="privacy-line">KOGNIT saves chats only in this browser. Add your own AI key in Settings for live AI replies.</p>
+          </section>
+        </section>
+
+        <section class="view" id="notes-view" aria-label="Saved notes">
+          <div class="library-heading">
+            <div><p class="mini-label">YOUR REVISION LIBRARY</p><h2>Notes worth keeping.</h2></div>
+            <button class="new-note-button" id="new-note" type="button">＋ Write a note</button>
+          </div>
+          <div class="notes-grid" id="notes-grid"></div>
+          <div class="empty-state" id="notes-empty">
+            <span>✦</span>
+            <h3>Your library is ready.</h3>
+            <p>Save a useful chat reply or write your own note to begin.</p>
+            <button class="secondary-button" data-view-link="study" type="button">Go to study space</button>
+          </div>
+        </section>
+
+        <section class="view" id="about-view" aria-label="About KOGNIT">
+          <article class="about-card">
+            <span class="about-mark">K</span>
+            <p class="mini-label">KOGNIT 1.0</p>
+            <h2>Built to help you think, not just copy.</h2>
+            <p>KOGNIT is a calm study space for asking better questions, understanding difficult ideas, and making revision material that is actually useful.</p>
+            <div class="about-points">
+              <div><span>01</span><strong>Private by default</strong><p>Your chats and notes stay in your browser.</p></div>
+              <div><span>02</span><strong>Works without an account</strong><p>Open it and begin studying straight away.</p></div>
+              <div><span>03</span><strong>Bring your own AI</strong><p>Connect a personal Gemini key only if you want live AI answers.</p></div>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="settings-dialog" id="settings-dialog">
+      <form method="dialog" class="dialog-card" id="settings-form">
+        <div class="dialog-header">
+          <div><p class="mini-label">YOUR DEVICE, YOUR CONTROL</p><h2>AI &amp; privacy</h2></div>
+          <button class="close-button" value="cancel" aria-label="Close settings" type="submit">×</button>
+        </div>
+        <label class="field-label" for="ai-provider">Reply source</label>
+        <select id="ai-provider">
+          <option value="demo">Kognit guided study mode — free, no key</option>
+          <option value="gemini">My Google Gemini API key — live AI replies</option>
+        </select>
+        <div id="gemini-fields" hidden="">
+          <label class="field-label" for="gemini-key">Gemini API key</label>
+          <input id="gemini-key" type="password" autocomplete="off" placeholder="Paste your personal key">
+          <label class="field-label" for="gemini-model">Model</label>
+          <input id="gemini-model" type="text" value="gemini-2.5-flash">
+          <p class="field-help">The key is stored only in this browser and is sent only to Google when you ask KOGNIT a question. Never share it or put it in public code.</p>
+        </div>
+        <div class="setting-divider"></div>
+        <div class="data-actions">
+          <div><strong>Your data</strong><p>Chats and notes are stored on this device only.</p></div>
+          <button class="danger-button" id="erase-data" type="button">Erase all local data</button>
+        </div>
+        <div class="dialog-actions"><button value="cancel" type="submit" class="secondary-button">Cancel</button><button class="primary-button" id="save-settings" value="default" type="submit">Save settings</button></div>
+      </form>
+    </dialog>
+
+    <dialog class="note-dialog" id="note-dialog">
+      <form method="dialog" class="dialog-card note-dialog-card" id="note-form">
+        <div class="dialog-header"><div><p class="mini-label">REVISION NOTE</p><h2 id="note-dialog-title">Write a note</h2></div><button class="close-button" value="cancel" aria-label="Close note" type="submit">×</button></div>
+        <input id="note-title" class="note-title-input" maxlength="80" placeholder="Note title" required="">
+        <textarea id="note-content" class="note-content-input" rows="10" maxlength="8000" placeholder="Write what you want to remember…" required=""></textarea>
+        <div class="dialog-actions"><button value="cancel" type="submit" class="secondary-button">Cancel</button><button class="primary-button" value="default" type="submit">Save note</button></div>
+      </form>
+    </dialog>
+
+    <template id="typing-template"></template>
+    <script src="./KOGNIT — Study clearer_files/app.js"></script>
+  
+
+</body></html>
